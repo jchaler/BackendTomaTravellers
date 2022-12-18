@@ -14,7 +14,4 @@ interface UserDataSource: JpaRepository<User, UUID> {
 
     @Query("SELECT u FROM User u where u.id in :ids")
     fun findAllById(@Param("ids") userIds: List<String>): MutableList<User>
-// jdkjkfd kdkfdmdmkdfmd
-
-
 }
